@@ -1,0 +1,21 @@
+{
+  "name": "rtm",
+  "version": "1.0.0",
+  "authors": [
+    "HK Yoon <hkzuuu@gmail.com>"
+  ],
+  "description": "RTM new website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "roomtomoney.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
