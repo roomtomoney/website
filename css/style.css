@@ -48,7 +48,7 @@ body {
 	background-color: #4f4f4f;
 	padding-bottom: 5px;
 	border-bottom: 5px solid #323232;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 section {
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 
 section.bg-white {
@@ -142,6 +142,15 @@ section.bg-mint p {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+	.row header {
+		border-radius: 10px;
+		
+	}
+
+	section {
+		border-radius: 10px;
+	}
 
 	nav #logo {
 		max-width:125px;
