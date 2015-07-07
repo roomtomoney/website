@@ -1,5 +1,6 @@
 html {
-	
+	width:100%;
+	height:100%;
 }
 
 body {
@@ -77,3 +78,21 @@ section.bg-mint p {
 	max-width:150px;
 }
 
+.splash {
+	background-color: #7bcab4;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+}
+
+.splash #Layer_1 {
+	display:inline-block;
+	position:relative;
+	width:40%;
+	max-width:350px;
+	top:50%;
+	margin-top:-250px;
+	margin-left:-20px;
+}
