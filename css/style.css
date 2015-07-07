@@ -3,16 +3,52 @@ html {
 	height:100%;
 }
 
+.jumbotron .img-responsive {
+	width:100%;
+	min-width:100%;
+	height:auto;
+}
+
+.jumbotron {
+	border-top:5px solid #7bcab4;
+	border-bottom:5px solid #7bcab4;
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow:hidden;
+}
+
+nav {
+	margin-top:10px;
+}
+
+nav #logo, nav #logoType {
+	text-align:center;
+}
+
+nav #logo #svgLogo {
+	max-width:150px;
+	display:inline-block;
+}
+
+nav #logoType #svgLogoType {
+	margin-left:2.5px;
+	margin-top:-50px;
+	display:inline-block;
+	max-width:180px;
+}
+
 body {
 	color:#838384;
 	font-family: 'PT Sans', sans-serif;
-	font-size:17px;
+	font-size:14px;
+	/*background-color: #6cad99;*/
 }
 
 .row header {
 	background-color: #4f4f4f;
 	padding-bottom: 5px;
 	border-bottom: 5px solid #323232;
+	border-radius: 10px;
 
 }
 
@@ -25,6 +61,10 @@ body {
 	font-size:2em;
 	margin-bottom:25px;
 	letter-spacing:0.05em;
+}
+
+section {
+	border-radius: 10px;
 }
 
 section.bg-white {
@@ -95,4 +135,46 @@ section.bg-mint p {
 	top:50%;
 	margin-top:-250px;
 	margin-left:-20px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+	nav #logo {
+		max-width:125px;
+	}	
+
+	nav #logoType #svgLogoType {
+		margin-top:0;
+		margin-left:-130px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+	nav #logoType #svgLogoType {
+		margin-left:-200px;
+	}
+
+	.jumbotron {
+		height:400px;
+	}
+
+	.jumbotron img {
+		margin-top:-50px;
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	nav #logoType #svgLogoType {
+		margin-left:-260px;
+	}
+
 }
