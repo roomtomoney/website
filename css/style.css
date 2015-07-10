@@ -1,6 +1,18 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 html {
 	width:100%;
 	height:100%;
+
+}
+
+hr {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.kr {
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 .jumbotron .img-responsive {
@@ -10,11 +22,28 @@ html {
 }
 
 .jumbotron {
-	border-top:5px solid #7bcab4;
-	border-bottom:5px solid #7bcab4;
+/*	border-top:5px solid #7bcab4;
+	border-bottom:5px solid #7bcab4;*/
 	padding-top: 0;
 	padding-bottom: 0;
 	overflow:hidden;
+	margin-bottom:0;
+}
+
+.jumbotron .jumboInfo {
+	position:absolute;
+	top:30px;
+}
+
+.jumbotron .jumboInfo h1 {
+	
+	margin-top:0;
+	font-size:1.5em;
+	padding-left:30px;
+	letter-spacing: 0.025em;
+	font-weight:700;
+	color:white;
+	text-shadow: 1px 1px 1px #4f4f4f;
 }
 
 nav {
@@ -42,9 +71,36 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size:14px;
 	/*background-color: #6cad99;*/
+	line-height:1.7em;
 }
 
+section#about div {
+	background-color: transparent;
+	border:none;
+
+}
+
+section#about .intro h3 {
+	font-size:1.1em;
+	font-weight:700;
+	color:#7bcab4;
+	border:none;
+	margin-top:53px;
+	padding-bottom:0;
+}
+
+
+/*section#rtm .intro>div {
+
+	font-size:1em;
+	font-style: italic;	
+}*/
+
+
+
+
 .row header {
+/*	margin-top: -40px;*/
 	background-color: #4f4f4f;
 	padding-bottom: 5px;
 	border-bottom: 5px solid #323232;
@@ -52,19 +108,30 @@ body {
 
 }
 
-
 .row header h2 {
+
 	font-weight:700;
 	color:white;
-	margin-left:30px;
-	margin-top:30px;
-	font-size:2em;
-	margin-bottom:25px;
-	letter-spacing:0.05em;
+/*	margin-left:15px;*/
+	margin-top:20px;
+	font-size:1.5em;
+	margin-bottom:15px;
+	letter-spacing: 0.10em;
 }
 
 section {
 	/*border-radius: 10px;*/
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+section.card {
+	padding-top:0;
+	padding-bottom:0;
+}
+
+section.card {
+	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
 }
 
 section.bg-white {
@@ -89,10 +156,16 @@ section.bg-mint p {
 	color:#fff;
 }
 
+.row .entry br {
+	display:none;
+}
+
 .row .entry {
 	background-color: inherit;
 	position:relative;
-	padding-left:45px;
+	padding-left:30px;
+	padding-right:30px;
+
 }
 
 .row .entry h3 {
@@ -105,10 +178,15 @@ section.bg-mint p {
 }
 
 .row .entry p {
-	width:70%;
-	margin-top:30px;
+	font-size:0.8em;
+	margin-top:50px;
 	margin-bottom:50px;	
 }
+
+.row .entry.intro {
+	background-color: rgba(123, 230, 179, 0.10);
+}
+
 
 .row .entry .icon {
 	position:absolute;
@@ -137,36 +215,84 @@ section.bg-mint p {
 	margin-left:-20px;
 }
 
+.inspiration {
+	text-align:center;
+	font-size: 1.2em;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
-	.row header {
-		border-radius: 10px;
+	.jumbotron .jumboInfo h1 {
+		margin-top:60px;
+		font-size:2em;
+		letter-spacing: 0.05em;
 		
 	}
 
-	section {
-		border-radius: 10px;
+	.row {
+		height:auto;
+	}
+
+	.row header {
+		border-radius: 2px;
+
+	}
+
+	.row header h2 {
+		margin-top:10px;
+		margin-bottom:5px;
+		font-size:1.2em;
+		letter-spacing: 0.15em;
+	}
+
+	section, section.card {
+		height:auto;
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+
+	section.card > div {
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+	section .container {
+		border-radius: 2px;
 	}
 
 	nav #logo {
-		max-width:125px;
+		max-width:110px;
 	}	
 
 	nav #logoType #svgLogoType {
+		max-width:150px;
 		margin-top:0;
-		margin-left:-130px;
+		margin-left:-150px;
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+	section {
+		/*border-radius: 10px;*/
+		padding-top:90px;
+		padding-bottom:100px;
+	}
+
+	.row header {
+/*		margin-top:-90px;*/
+	}
+
+	.row .entry br {
+		display:inline;
+	}
+
 	nav #logoType #svgLogoType {
-		margin-left:-200px;
+		margin-left:-215px;
 	}
 
 	.jumbotron {
@@ -182,8 +308,9 @@ section.bg-mint p {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+
 	nav #logoType #svgLogoType {
-		margin-left:-260px;
+		margin-left:-280px;
 	}
 
 }
