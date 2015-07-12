@@ -46,6 +46,14 @@ hr {
 	text-shadow: 1px 1px 1px #4f4f4f;
 }
 
+body {
+	color:#838384;
+	font-family: 'PT Sans', sans-serif;
+	font-size:16px;
+	/*background-color: #6cad99;*/
+	line-height:1.7em;
+}
+
 nav {
 	margin-top:10px;
 }
@@ -65,15 +73,6 @@ nav #logoType #svgLogoType {
 	display:inline-block;
 	max-width:180px;
 }
-
-body {
-	color:#838384;
-	font-family: 'PT Sans', sans-serif;
-	font-size:15px;
-	/*background-color: #6cad99;*/
-	line-height:1.7em;
-}
-
 
 section .intro h3 {
 
@@ -171,7 +170,7 @@ section.bg-mint p {
 
 section .intro p {
 	font-weight:700;
-	line-height:1.4em;
+	line-height:1.5em;
 }
 
 section.bg-white .entry.intro {
@@ -310,7 +309,8 @@ footer {
 	}
 
 	.servicesDiv .entry {
-		height:300px;
+		height:400px;
+		height:auto;
 	}
 
 
