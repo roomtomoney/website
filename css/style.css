@@ -287,12 +287,13 @@ section .icon img{
 
 section#about .icon img{
 	display:inline-block;
-	width:70%;
+	width:100%;
 }
 
 section .icon h4 {
 	text-align:center;
 	margin-top:-10px;
+	font-size:1em;
 }
 
 /*section#rtm .intro>div {
@@ -507,6 +508,17 @@ footer {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+	section .icon h4 {
+		text-align:center;
+		margin-top:-10px;
+		font-size:1.2em;
+	}
+
+	section#about .icon img{
+		display:inline-block;
+		width:70%;
+	}
 
 	section {
 		/*border-radius: 10px;*/
