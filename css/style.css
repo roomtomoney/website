@@ -76,7 +76,7 @@ hr {
 body {
 	color:#838384;
 	font-family: 'PT Sans', sans-serif;
-	font-size:16px;
+	font-size:18px;
 	/*background-color: #6cad99;*/
 	line-height:1.7em;
 }
@@ -107,22 +107,20 @@ section .intro h3 {
 
 section#about .intro h3 {
 /*	text-align:center;*/
-	font-size:1em;
+	font-size:1.3em;
 	font-weight:700;
 	color:#7bcab4;
 	border:none;
 	margin-top:40px;
-	padding-bottom:0;
 }
 
 section#services .intro h3 {
 	/*text-align:center;*/
-	font-size:1em;
+	font-size:1.3em;
 	font-weight:700;
 	color:#323232;
 	border:none;
 	margin-top:40px;
-	padding-bottom:0;
 }
 
 
@@ -132,30 +130,30 @@ section#services .intro h3 {
 
 	.entry h4 {
 		font-weight:700;
+		font-size:1.2em;
 	}
 
 section.bg-mint .entry h4 {
 	color:#323232;
+	font-weight:700;
 }
 
-section#testimony .intro h3 {
+section#testimonials .intro h3 {
 	/*text-align:center;*/
-	font-size:1.1em;
+	font-size:1.3em;
 	font-weight:700;
 	color:#7bcab4;
 	border:none;
 	margin-top:40px;
-	padding-bottom:0;
 }
 
 section#interested .intro h3 {
 	/*text-align:center;*/
-	font-size:1.1em;
+	font-size:1.3em;
 	font-weight:700;
 	color:#7bcab4;
 	border:none;
 	margin-top:40px;
-	padding-bottom:0;
 }
 
 section#interested .form {
@@ -284,7 +282,7 @@ section .icon {
 
 section .icon img{
 	display:inline-block;
-	width:70%;
+	width:100%;
 }
 
 section .icon h4 {
@@ -341,14 +339,28 @@ section .icon h4 {
 	font-size:1.7em;
 	font-weight:700;	
 	margin-top:50px;
-	padding-bottom:30px;
 	letter-spacing:0.04em;
 }
 
 .row .entry p {
-	font-size:0.8em;
+	font-size:0.85em;
 	margin-top:40px;
 	margin-bottom:50px;	
+	letter-spacing:0.01em;
+}
+
+.row .entry ul {
+/*	background-color:rgba(255,255,255,0.05);*/
+	border-radius:10px;
+	border: 2px solid white;
+	font-size:0.9em;
+	color:white;
+	margin-bottom:50px;
+	padding-right:10px;
+}
+
+.row .entry ul li {
+	margin:10px 0;
 }
 
 .row .entry .icon {
@@ -380,7 +392,13 @@ section .icon h4 {
 
 .inspiration {
 	text-align:center;
-	font-size: 1.2em;
+	font-size: 1.3em;
+
+	letter-spacing: 0.03em;
+}
+
+.inspiration span{
+	font-weight: 700;
 }
 
 footer {
@@ -394,6 +412,10 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+	section .intro h3 {
+		padding-bottom:40px;
+	}
 
 	.servicesDiv {
 		padding:40px 0;
