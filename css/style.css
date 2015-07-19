@@ -78,7 +78,7 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size:18px;
 	/*background-color: #6cad99;*/
-	line-height:1.7em;
+	line-height:1.4em;
 }
 
 nav {
@@ -258,7 +258,7 @@ section.bg-mint p {
 }
 
 section .intro p {
-	font-weight:700;
+	font-weight:500;
 	line-height:1.5em;
 }
 
@@ -283,6 +283,11 @@ section .icon {
 section .icon img{
 	display:inline-block;
 	width:100%;
+}
+
+section#about .icon img{
+	display:inline-block;
+	width:70%;
 }
 
 section .icon h4 {
@@ -392,7 +397,7 @@ section .icon h4 {
 
 .inspiration {
 	text-align:center;
-	font-size: 1.3em;
+	font-size: 1em;
 
 	letter-spacing: 0.03em;
 }
@@ -412,6 +417,11 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+	.inspiration {
+		font-size: 1.3em;
+
+	}	
 
 	section .intro h3 {
 		padding-bottom:40px;
