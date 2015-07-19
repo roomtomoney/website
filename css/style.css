@@ -15,6 +15,33 @@ hr {
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
+.myButton {
+  background: #7bcab4;
+  background-image: -webkit-linear-gradient(top, #7bcab4, #74b8a5);
+  background-image: -moz-linear-gradient(top, #7bcab4, #74b8a5);
+  background-image: -ms-linear-gradient(top, #7bcab4, #74b8a5);
+  background-image: -o-linear-gradient(top, #7bcab4, #74b8a5);
+  background-image: linear-gradient(to bottom, #7bcab4, #74b8a5);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  border:none;
+  font-weight:700;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background: #89d6c0;
+  background-image: -webkit-linear-gradient(top, #89d6c0, #7bcab4);
+  background-image: -moz-linear-gradient(top, #89d6c0, #7bcab4);
+  background-image: -ms-linear-gradient(top, #89d6c0, #7bcab4);
+  background-image: -o-linear-gradient(top, #89d6c0, #7bcab4);
+  background-image: linear-gradient(to bottom, #89d6c0, #7bcab4);
+  text-decoration: none;
+}
+
 .jumbotron .img-responsive {
 	width:100%;
 	min-width:100%;
@@ -111,7 +138,7 @@ section.bg-mint .entry h4 {
 	color:#323232;
 }
 
-section#gallery .intro h3 {
+section#testimony .intro h3 {
 	/*text-align:center;*/
 	font-size:1.1em;
 	font-weight:700;
@@ -130,6 +157,70 @@ section#interested .intro h3 {
 	margin-top:40px;
 	padding-bottom:0;
 }
+
+section#interested .form {
+
+	padding-top:20px;
+	padding-bottom:20px;
+	transition:background-color 1s ease;
+}
+
+section#interested .form.submitted {
+	background-color:#7bcab4;
+}
+
+section#interested .form form .ss-form-entry {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+section#interested .form form .ss-form-entry label {
+	letter-spacing: 0.05em;
+
+}
+
+section#interested .form form .ss-form-entry input[type="text"],
+section#interested .form form .ss-form-entry input[type="email"],
+section#interested .form form .ss-form-entry select  {
+	border-radius:5px;
+	border:1px solid #7bcab4;
+	padding-left:5px;
+}
+
+section#interested .form form .ss-form-entry input[type="text"]:focus,
+section#interested .form form .ss-form-entry input[type="email"]:focus,
+section#interested .form form .ss-form-entry select:focus{
+	outline-color:#7bcab4;
+	outline-width:5px;
+}
+
+section#interested .form form .ss-form-entry textarea {
+	width:100%;
+	border-radius:5px;
+	border:1px solid #7bcab4;
+	padding-left:5px;
+	height:100px;
+}
+
+section#interested .form .submittedMessage {
+	text-align:center;
+	font-weight:700;
+	padding-top:200px;
+	padding-bottom:200px;
+	color:white;
+}
+
+section#interested .form .submittedMessage img{
+	display:inline-block;
+	margin:20px 0;
+	max-width:200px;
+}
+
+span.ss-required-asterisk {
+	color:#7bcab4;
+}
+
+
 
 section {
 	/*border-radius: 10px;*/
@@ -234,7 +325,7 @@ section .icon h4 {
 
 
 .row .entry br {
-	display:none;
+/*	display:none;*/
 }
 
 .row .entry {
@@ -375,11 +466,11 @@ footer {
 /* temps */
 
 .form img {
-	min-width:100%;
+	width:100%;
 }
 
 .gallery img {
-	min-width:100%;
+	width:100%;
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -425,6 +516,13 @@ footer {
 
 	.jumbotron img {
 		margin-top:-100px;
+	}
+
+	section#interested .form {
+
+		padding-top:40px;
+		padding-bottom:80px;
+
 	}
 
 }
