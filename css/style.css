@@ -15,6 +15,10 @@ hr {
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
+img {
+	width:100%;
+}
+
 .myButton {
   background: #7bcab4;
   background-image: -webkit-linear-gradient(top, #7bcab4, #74b8a5);
@@ -83,6 +87,8 @@ body {
 
 nav {
 	margin-top:10px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 nav #logo, nav #logoType {
@@ -90,7 +96,9 @@ nav #logo, nav #logoType {
 }
 
 nav #logo #svgLogo {
-	max-width:150px;
+	margin-top:-5px;
+	max-width:100px;
+	height:auto;
 	display:inline-block;
 }
 
@@ -99,10 +107,11 @@ nav #logoType #svgLogoType {
 	margin-top:-50px;
 	display:inline-block;
 	max-width:180px;
+	height:auto;	
 }
 
 section .intro h3 {
-
+	text-align:center;
 }
 
 section#about .intro h3 {
@@ -130,7 +139,8 @@ section#services .intro h3 {
 
 	.entry h4 {
 		font-weight:700;
-		font-size:1.2em;
+		font-size:1.5em;
+		text-align:center;
 	}
 
 section.bg-mint .entry h4 {
@@ -189,7 +199,7 @@ section#interested .form form .ss-form-entry input[type="text"]:focus,
 section#interested .form form .ss-form-entry input[type="email"]:focus,
 section#interested .form form .ss-form-entry select:focus{
 	outline-color:#7bcab4;
-	outline-width:5px;
+	outline-width:2px;
 }
 
 section#interested .form form .ss-form-entry textarea {
@@ -313,6 +323,7 @@ section .icon h4 {
 	border-bottom: 5px solid #323232;
 	/*border-radius: 10px;*/
 
+	text-align:center;
 }
 
 .row header h2 {
@@ -321,7 +332,7 @@ section .icon h4 {
 	color:white;
 /*	margin-left:15px;*/
 	margin-top:20px;
-	font-size:1.5em;
+	font-size:1.3em;
 	margin-bottom:15px;
 	letter-spacing: 0.10em;
 }
@@ -340,8 +351,8 @@ section .icon h4 {
 
 }
 
-.row .entry h3 {
-	width:55%;
+.row .entry h3 {/*
+	width:55%;*/
 	font-size:1.7em;
 	font-weight:700;	
 	margin-top:50px;
@@ -356,13 +367,14 @@ section .icon h4 {
 }
 
 .row .entry ul {
-/*	background-color:rgba(255,255,255,0.05);*/
 	border-radius:10px;
 	border: 2px solid white;
 	font-size:0.9em;
 	color:white;
 	margin-bottom:50px;
 	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .row .entry ul li {
@@ -426,6 +438,7 @@ footer {
 
 	section .intro h3 {
 		padding-bottom:40px;
+		text-align:left;
 	}
 
 	.servicesDiv {
@@ -460,7 +473,6 @@ footer {
 
 	.row header {
 		border-radius: 2px;
-
 	}
 
 	.row header h2 {
@@ -490,7 +502,8 @@ footer {
 
 	nav #logoType #svgLogoType {
 		max-width:150px;
-		margin-top:0;
+		height:auto;
+		margin-top:-8px;
 		margin-left:-150px;
 	}
 
