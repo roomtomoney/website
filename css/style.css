@@ -6,6 +6,10 @@ html {
 	font-weight:400;
 }
 
+br {
+	display:none;
+}
+
 hr {
 	margin-top:0;
 	margin-bottom:0;
@@ -110,8 +114,8 @@ nav #logoType #svgLogoType {
 	height:auto;	
 }
 
-section .intro h3 {
-	text-align:center;
+section .intro h3 {/*
+	text-align:center;*/
 }
 
 section#about .intro h3 {
@@ -430,6 +434,10 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+	br.sm {
+		display:inline;
+	}
 
 	.inspiration {
 		font-size: 1.3em;
