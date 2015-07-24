@@ -67,7 +67,9 @@ img {
 
 .jumbotron img {
 	transition:transform 1s ease-in-out;
-	transform: scale(1.45);
+	-webkit-transform: scale(1.47);
+	-moz-transform: scale(1.47);
+	transform: scale(1.47);
 }
 
 .jumbotron .jumboInfo {
