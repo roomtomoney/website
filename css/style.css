@@ -386,8 +386,8 @@ section .icon h4 {
 }
 
 .row .entry.helper p {
-	margin-top:0;
-	margin-bottom:0;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 
@@ -628,3 +628,4 @@ footer {
 
 
 }
+
