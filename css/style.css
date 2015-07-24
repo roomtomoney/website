@@ -38,6 +38,7 @@ img {
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  font-family:'PT Sans', sans-serif;;
 }
 
 .myButton:hover {
@@ -84,11 +85,41 @@ img {
 	overflow:hidden;
 	height:auto;
 	float:left;
+	position:relative;
 }
 
-.jumbotron .jumboInfo {
+.jumbotron .banner .bannerText {
+	margin:auto;
 	position:absolute;
-	top:30px;
+	top:0; left:0; bottom:0; right:0;
+	color:white;
+	width:300px;
+	height:50px;
+	z-index:100;
+	text-align:center;
+}
+
+.jumbotron .banner .bannerText p {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	position:relative;
+	display:inline-block;
+	text-align:center;
+	width:250px;
+	font-size:1.1em;
+	line-height:1.3em;
+
+}
+
+.jumbotron .bannerText input {
+	top:0;
+	width:auto;
+	position:relative;
+	display:none;
+/*	margin:;
+	top:60%;
+	left:50%;
+	position:absolute;
+	margin-left:-50px;*/
 }
 
 .jumbotron .jumboInfo h1 {
@@ -475,6 +506,22 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+
+	.jumbotron .banner .bannerText {
+		top:-50px;
+		width:430px;
+	}
+	
+	.jumbotron .banner .bannerText p {
+		width:430px;
+		top:0;
+		font-size:1.3em;		
+	}
+
+	.jumbotron .bannerText input {
+		display:inline-block;
+	}
+
 	br.sm {
 		display:inline;
 	}
@@ -515,7 +562,8 @@ footer {
 		
 	}
 
-	.jumbotron img {
+	.jumbotron .img-responsive {
+		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -531,7 +579,7 @@ footer {
 		margin-top:10px;
 		margin-bottom:5px;
 		font-size:1.2em;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.1em;
 		text-align:left;
 	}
 
@@ -575,6 +623,15 @@ footer {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+	.jumbotron .banner .bannerText {
+		margin-top:200px;
+		width:580px;
+	}
+
+	.jumbotron .banner .bannerText p {
+		width:580px;
+	}
+
 	section .icon h4 {
 		text-align:center;
 		margin-top:-10px;
@@ -608,7 +665,7 @@ footer {
 		height:400px;
 	}
 
-	.jumbotron img {
+	.jumbotron .img-responsive {
 		transform: translateY(-50px);
 		/*margin-top:-50px;*/
 	}
@@ -620,6 +677,13 @@ footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+	.jumbotron .banner .bannerText p {
+		width:560px;
+		font-size:1.5em;
+	}
+
+	.jumbotron .bannerText input {
+	}
 
 	nav #logoType #svgLogoType {
 		margin-left:-280px;
@@ -642,7 +706,7 @@ footer {
 @media (min-width: 1600px) {
 
 
-	.jumbotron img {
+	.jumbotron .img-responsive {
 		/*margin-top:-200px;*/
 		transform: translateY(-150px);
 	}
