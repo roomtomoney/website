@@ -10,6 +10,10 @@ br {
 	display:none;
 }
 
+br.xs {
+	display:inline;
+}
+
 hr {
 	margin-top:0;
 	margin-bottom:0;
@@ -520,6 +524,10 @@ footer {
 
 	.jumbotron .bannerText input {
 		display:inline-block;
+	}
+
+	br.xs {
+		display:none;
 	}
 
 	br.sm {
