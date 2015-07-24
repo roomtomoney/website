@@ -67,6 +67,7 @@ img {
 
 .jumbotron img {
 	transition:transform 1s ease-in-out;
+	transform: scale(1.45);
 }
 
 .jumbotron .jumboInfo {
@@ -345,9 +346,9 @@ section .icon h4 {
 	font-weight:700;
 	color:white;
 /*	margin-left:15px;*/
-	margin-top:20px;
+	margin-top:10px;
 	font-size:1.3em;
-	margin-bottom:15px;
+	margin-bottom:5px;
 	letter-spacing: 0.10em;
 }
 
@@ -496,6 +497,10 @@ footer {
 		font-size:2em;
 		letter-spacing: 0.05em;
 		
+	}
+
+	.jumbotron img {
+		transform: scale(1);
 	}
 
 	.row {
