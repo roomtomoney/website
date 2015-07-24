@@ -44,11 +44,15 @@ Jumbo.prototype.next = function() {
 	if (this.currentSlide == this.numSlides) {
 		this.currentSlide = 1;
 		this.topContainer.style.transform = "translateX(0)";	
+		this.topContainer.style.webkitTransform = "translateX(0)";
+		this.topContainer.style.mozTransform = "translateX(0)";
 	}
 
 	else {
 		var translateXPercent = 1/this.numSlides * 100;
 		this.topContainer.style.transform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
+		this.topContainer.style.webkitTransform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
+		this.topContainer.style.mozTransform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
 		this.currentSlide += 1;	
 	}
 
