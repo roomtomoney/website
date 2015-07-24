@@ -65,6 +65,10 @@ img {
 	margin-bottom:0;
 }
 
+.jumbotron img {
+	transition:transform 1s ease-in-out;
+}
+
 .jumbotron .jumboInfo {
 	position:absolute;
 	top:30px;
@@ -101,16 +105,16 @@ nav #logo, nav #logoType {
 
 nav #logo #svgLogo {
 	margin-top:-5px;
-	max-width:100px;
+	max-width:80px;
 	height:auto;
 	display:inline-block;
 }
 
 nav #logoType #svgLogoType {
 	margin-left:2.5px;
-	margin-top:-50px;
+	margin-top:-40px;
 	display:inline-block;
-	max-width:180px;
+	max-width:140px;
 	height:auto;	
 }
 
@@ -136,6 +140,10 @@ section#services .intro h3 {
 	margin-top:40px;
 }
 
+
+	.servicesDiv {
+		background-color: rgba(123,202,180,0.8);
+	}
 
 	.servicesDiv .entry.icon img{
 		max-width:300px;
@@ -197,6 +205,8 @@ section#interested .form form .ss-form-entry select  {
 	border-radius:5px;
 	border:1px solid #7bcab4;
 	padding-left:5px;
+	padding-bottom:8px;
+	font-size:0.9em;
 }
 
 section#interested .form form .ss-form-entry input[type="text"]:focus,
@@ -259,7 +269,7 @@ section.bg-white h3 {
 }
 
 section.bg-mint {
-	background-color: #7bcab4;
+	background-color: rgba(123,202,180,1);
 }
 
 section.bg-mint h3 {
@@ -370,9 +380,20 @@ section .icon h4 {
 	letter-spacing:0.01em;
 }
 
+.row .entry.helper {
+	margin-bottom:40px;
+	margin-top:40px;
+}
+
+.row .entry.helper p {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+
 .row .entry ul {
-	border-radius:10px;
-	border: 2px solid white;
+	border-radius:15px;
+	border: 4px solid white;
 	font-size:0.9em;
 	color:white;
 	margin-bottom:50px;
@@ -383,6 +404,8 @@ section .icon h4 {
 
 .row .entry ul li {
 	margin:10px 0;
+	font-size:0.8em;
+	font-weight:700;
 }
 
 .row .entry .icon {
@@ -565,7 +588,8 @@ footer {
 	}
 
 	.jumbotron img {
-		margin-top:-50px;
+		transform: translateY(-50px);
+		/*margin-top:-50px;*/
 	}
 
 
@@ -590,5 +614,17 @@ footer {
 		padding-bottom:80px;
 
 	}
+
+}
+
+/* X-Large devices (xlarge desktops, 1500px and up) */
+@media (min-width: 1600px) {
+
+
+	.jumbotron img {
+		/*margin-top:-200px;*/
+		transform: translateY(-150px);
+	}
+
 
 }
