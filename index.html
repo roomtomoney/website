@@ -39,22 +39,28 @@
 	    	</div>
     	</nav>
 	</div> <!-- NAV CONTAINER -->
-
-	<div class="jumbotron">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="jumboInfo kr">
-						
+	<div class="jumbotronTop">
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="jumboInfo kr">
+							
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="banner">
+				<img src="imgs/jumbo1.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="banner">
+				<img src="imgs/jumbo1.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="banner">
+				<img src="imgs/jumbo1.jpg" alt="" class="img-responsive">
+			</div>			
 		</div>
-		<img src="imgs/jumbo1.jpg" alt="" class="img-responsive">
-
-
 	</div>
-
 
 
 	<section class="bg-white">
@@ -447,6 +453,11 @@
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	    <script src="js/script.js"></script>
+	    <script>
+	    	var jumboOne = new Jumbo();
+	    	jumboOne.init(1000);
+	    	jumboOne.start();
+	    </script>
 	  
   </body>
 </html>

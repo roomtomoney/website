@@ -54,6 +54,15 @@ img {
 	width:100%;
 	min-width:100%;
 	height:auto;
+	transition:transform 1s ease-in-out;
+	-webkit-transform: scale(1.47);
+	-moz-transform: scale(1.47);
+	transform: scale(1.47);	
+	float:left;	
+}
+
+.jumbotronTop {
+	overflow:hidden;
 }
 
 .jumbotron {
@@ -63,13 +72,16 @@ img {
 	padding-bottom: 0;
 	overflow:hidden;
 	margin-bottom:0;
+	width:200%;
+	height:auto;
+	transition:transform 1.5s ease-in-out;
 }
 
-.jumbotron img {
-	transition:transform 1s ease-in-out;
-	-webkit-transform: scale(1.47);
-	-moz-transform: scale(1.47);
-	transform: scale(1.47);
+.jumbotron .banner {
+	width:50%;
+	overflow:hidden;
+	height:auto;
+	float:left;
 }
 
 .jumbotron .jumboInfo {
