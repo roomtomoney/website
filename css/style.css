@@ -70,7 +70,7 @@ img {
 	overflow:hidden;
 }
 
-.jumbotron {
+.jumbotron, .hostJumbo {
 /*	border-top:5px solid #7bcab4;
 	border-bottom:5px solid #7bcab4;*/
 	padding-top: 0;
@@ -378,15 +378,6 @@ section .icon h4 {
 	font-size:1em;
 }
 
-/*section#rtm .intro>div {
-
-	font-size:1em;
-	font-style: italic;	
-}*/
-
-
-
-
 
 .row header {
 /*	margin-top: -40px;*/
@@ -455,7 +446,7 @@ section .icon h4 {
 	font-size:0.9em;
 	color:white;
 	margin-bottom:50px;
-	padding-right:10px;
+	padding-right:15px;
 	padding-top:10px;
 	padding-bottom:10px;
 }
@@ -501,7 +492,7 @@ section .icon h4 {
 	letter-spacing: 0.03em;
 }
 
-.inspiration .jumboControl {
+.inspiration .jumboControl, .hostJumboControl {
 	display:inline-block;
 	width:180px;
 	height:50px;
@@ -530,12 +521,69 @@ section#services .entry ul li::after {
 	background:url(../imgs/icons/icon_check.svg) no-repeat;
 }
 
+section#testimonials {
+	position:relative;
+}
+
+section#testimonials .hostJumbo .banner .bannerText {
+	padding-top:50px;padding-bottom:50px;
+	text-align:center;
+	opacity: 1;
+	transition:opacity 1.5s;
+}
+
+section#testimonials .hostJumbo .banner .bannerText.hiddden {
+	opacity: 0;
+}
+
+section#testimonials .hostJumbo .banner .bannerText h4 {
+	font-size:1.2em;
+}
+
+section#testimonials .hostJumbo .banner .bannerText p.hostName {
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:0.9em;
+	color:#7bcab4;
+	font-weight:700;
+	text-align:center;
+}
+
+section#testimonials .hostJumbo .banner .bannerText p {
+	margin-top:30px;
+	font-size:0.9em;
+	line-height:1.3em;
+	text-align:left;
+}
+
+section#testimonials .hostJumbo .banner .bannerText img.hostImg {
+	display:inline-block;
+	width:150px;
+}
+
+.hostJumboControlContainer {
+	text-align:center;
+	padding:0;
+}
+
+.hostJumboControl {
+}
+
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+	section#testimonials .hostJumbo .banner .bannerText p {
+		font-size:1.1em;
+		line-height:1.6em;
+	}
+
+	.hostJumboControl {
+		top:800px;
+	}
 
 	.jumbotron .banner .bannerText {
 		top:-50px;

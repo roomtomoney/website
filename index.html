@@ -288,13 +288,65 @@
 
 		  		<hr>
 
-		  		<div class="entry col-xs-12 gallery">
-		  			<img src="imgs/icons/gallery_placeholder.png" alt="">
+		  		<div class="entry col-xs-12 hosts">
+		  			
+		  			<div class="jumbotronTop">
+		  				<div class="hostJumbo">
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr hiddden">
+		  							<img class="hostImg" src="imgs/host1.jpg" alt="">
+		  							<h4>MERS 때문에 걱정했는데, 6월 290만원 최고 매출을 달성했어요!</h4>
+		  							<p class="hostName">윤명희 호스트님</p>
+		  							<div class="row">
+		  								<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  									<p>룸투머니는 룸투머니 사업설명회를 통해 알게 되었어요. 장기 홈스테이는 오랫동안 해왔지만 Airbnb 단기 여행자들은 처음이라 운영이 어려웠었는데, 룸투머니 서비스를 이용하고 부터 예약률도 높아지고 힘들었던 6월 메르스도 잘 이겨낼 수 있었어요.
+											</p>
+		  								</div>
+		  							</div>		  							
+		  						</div>
+		  					</div>
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr">
+		  							<img class="hostImg" src="imgs/host2.jpg" alt="">		  					
+		  							<h4>Airbnb 호스트가 되면서 새로운 삶을 살고 있어요!</h4>
+		  							<p class="hostName">김향금 호스트님</p>
+		  							<div class="row">
+		  								<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  									<div class="row">
+		  										<div class="col-md-6">
+		  											<p>몇년전 겪은 개인적인 어려움 때문에 삶의 방향성을 못찾고 있었는데, 인생의 터닝 포인트를 만들기 위해 큰 금액을 들여 옥상 정원을 개조하고 호스팅을 시작했습니다. 하지만 계정 등록하는 방법부터 외국어 그리고 운영까지 모든 부분이 어려웠었는데, 룸투머니와 서비스를 이용하고 6개월 동안 대략 40회에 호스팅을 할 수 있었습니다.</p>
+		  										</div>
+		  										<div class="col-md-6">
+		  											<p>룸투머니 서비스를 이용해보니 초기 시작할 때 리스크를 줄일 수 있었고, 호스트로서 전문성도 늘어가고 있습니다. 룸투머니와 함께 운영하는 집을 더 늘려 1~2년 뒤 ‘김여사의 게스트 하우스’를 만드는 것을 꿈꾸고 있습니다.</p>
+		  										</div>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr">
+		  							<img class="hostImg" src="imgs/host3.jpg" alt="">		
+		  							<h4>직장에서 게스트 걱정하지 않고 일에 집중할 수 있어서 좋아요.</h4>
+		  							<p class="hostName">김명희 호스트님</p>
+		  							<div class="row">
+		  								<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  									<p>직장에 있을 때, 게스트가 요청을 할 경우가 있으면 바로바로 해결이 어려워 고민스러웠는데 룸투머니가 예약 문의부터 청소까지 해결해주니 직장 생활에 집중하면서 만족스러운 수익도 발생하니 좋습니다.
+											</p>
+		  								</div>
+		  							</div>		  			  							
+		  						</div>
+		  					</div>		  					
+		  					
+		  				</div>
+		  			</div>
 					
 		  		</div>
 
 				<div class="clearfix"></div>
-
+				<div class="hostJumboControlContainer">
+					<div class="hostJumboControl"></div>
+				</div>
 
 		  	</div>
 
@@ -469,6 +521,10 @@
 	    	var jumboOne = new Jumbo(".jumbotron");
 	    	jumboOne.init({"name":"main", "inverval":7500, "control":".jumboControl"});
 	    	jumboOne.start();
+
+	    	var jumboTwo = new Jumbo(".hostJumbo");
+	    	jumboTwo.init({"name":"host", "interval":17500, "control":".hostJumboControl"});
+	    	jumboTwo.start();
 	    </script>
 	  
   </body>

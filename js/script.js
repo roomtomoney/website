@@ -98,8 +98,9 @@ Jumbo.prototype.next = function() {
 	}, 750);
 
 	// set highlight on the control
-
-	this.control.highlightButton(this.currentSlide);
+	if (this.control) {
+		this.control.highlightButton(this.currentSlide);
+	}
 
 };
 
@@ -110,8 +111,10 @@ Jumbo.prototype.start = function(interval) {
 	this.setIntervalHandle = setInterval(this.next.bind(this), this.interval);
 
 	// set highlight on the control
-
-	this.control.highlightButton(this.currentSlide);
+	if (this.control) {
+		this.control.highlightButton(this.currentSlide);	
+	}
+	
 
 };
 
@@ -143,8 +146,9 @@ Jumbo.prototype.goTo = function(slide) {
 	this.setIntervalHandle = setInterval(this.next.bind(this), this.interval);
 
 	// set highlight on the control
-
-	this.control.highlightButton(slide);
+	if (this.control) {
+		this.control.highlightButton(slide);
+	}
 
 };
 
