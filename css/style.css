@@ -516,6 +516,17 @@ footer {
 	height:300px;
 }
 
+section#services .entry ul li::after {
+	content:"";
+	display:inline-block;
+	width:30px;
+	height:30px;
+	top:9px;
+	left:5px;
+	position:relative;
+	background:url(../imgs/icons/icon_check.svg) no-repeat;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -630,15 +641,6 @@ footer {
 
 }
 
-/* temps */
-
-.form img {
-	width:100%;
-}
-
-.gallery img {
-	width:100%;
-}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
