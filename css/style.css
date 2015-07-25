@@ -464,6 +464,7 @@ section .icon h4 {
 	margin:10px 0;
 	font-size:0.8em;
 	font-weight:700;
+	position:relative;
 }
 
 .row .entry .icon {
@@ -521,9 +522,11 @@ section#services .entry ul li::after {
 	display:inline-block;
 	width:30px;
 	height:30px;
-	top:9px;
-	left:5px;
-	position:relative;
+	top:auto;
+	margin-top:-3px;
+	/*top:10px;
+	left:5px;*/
+	position:absolute;
 	background:url(../imgs/icons/icon_check.svg) no-repeat;
 }
 
