@@ -500,6 +500,12 @@ section .icon h4 {
 	letter-spacing: 0.03em;
 }
 
+.inspiration .jumboControl {
+	display:inline-block;
+	width:180px;
+	height:50px;
+}
+
 span{
 	font-weight: 700;
 }
