@@ -56,12 +56,27 @@ Jumbo.prototype.next = function() {
 		this.currentSlide += 1;	
 	}
 
+	// fadeout bannerText and 
+	var bText = this.topContainer.querySelectorAll(".bannerText");
+	console.log(bText);
+	for (var i = 0 ; i < bText.length ; i++ ) {
+		console.log(bText.item(i));
+		bText.item(i).classList.add("hiddden");
+	}
+
+	var that = this;
+	setTimeout(function(){
+		bText.item(that.currentSlide - 1).classList.remove("hiddden");
+	}, 750);
+
+
 
 };
 
 Jumbo.prototype.start = function(interval) {
 	var that = this;
 	console.log(that);
+	this.topContainer.querySelector(".bannerText").classList.remove("hiddden");
 	this.setIntervalHandle = setInterval(this.next.bind(this), this.interval);
 };
 

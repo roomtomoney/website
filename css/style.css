@@ -101,6 +101,12 @@ img {
 	height:50px;
 	z-index:100;
 	text-align:center;
+	opacity: 1;
+	transition:opacity 1.5s;
+}
+
+.jumbotron .banner .bannerText.hiddden {
+	opacity:0;
 }
 
 .jumbotron .banner .bannerText p {
