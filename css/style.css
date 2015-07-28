@@ -149,6 +149,8 @@ body {
 	font-size:18px;
 	/*background-color: #6cad99;*/
 	line-height:1.4em;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);	
 }
 
 nav {
