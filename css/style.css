@@ -55,6 +55,28 @@ img {
   text-decoration: none;
 }
 
+
+.menu {
+	position:relative;
+	top:25px;
+}
+
+.menu ul {
+	text-align:right;
+}
+
+.menu ul li {
+	margin-left:15px;
+	margin-right:15px;
+	font-weight:700;
+	display:inline-block;
+	color:#838384;
+}
+
+.menu ul li:hover {
+	color:#7bcab4;
+}
+
 .jumbotron .img-responsive {
 	width:100%;
 	min-width:100%;
@@ -65,6 +87,11 @@ img {
 	transform: scale(1.47);	
 	float:left;	
 }
+
+.menu {
+	display:none;
+}
+
 
 .jumbotronTop {
 	overflow:hidden;
@@ -301,8 +328,6 @@ section#interested .form .submittedMessage img{
 span.ss-required-asterisk {
 	color:#7bcab4;
 }
-
-
 
 section {
 	/*border-radius: 10px;*/
@@ -578,6 +603,14 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+	.menu {
+		display:block;
+	}
+
+	nav #logoType #svgLogoType {
+		display:none;
+	}
+
 	section#testimonials .hostJumbo .banner .bannerText p {
 		font-size:1.1em;
 		line-height:1.6em;
@@ -685,12 +718,6 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 		max-width:110px;
 	}	
 
-	nav #logoType #svgLogoType {
-		max-width:150px;
-		height:auto;
-		margin-top:-8px;
-		margin-left:-150px;
-	}
 
 }
 
@@ -733,8 +760,14 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 	}
 
 	nav #logoType #svgLogoType {
-		margin-left:-215px;
+		display:block;
+		max-width:150px;
+		height:auto;
+		margin-top:-4px;
+		margin-left:-40px;
+		/*margin-left:-150px;*/
 	}
+
 
 	.jumbotron {
 		height:400px;
@@ -761,7 +794,8 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 	}
 
 	nav #logoType #svgLogoType {
-		margin-left:-280px;
+		margin-top:-7px;
+		margin-left:-40px;
 	}
 
 	.jumbotron img {
