@@ -585,7 +585,7 @@ section#testimonials {
 }
 
 section#testimonials .hostJumbo .banner .bannerText {
-	padding-top:50px;padding-bottom:50px;
+	padding-top:50px;padding-bottom:15px;
 	text-align:center;
 	opacity: 1;
 	transition:opacity 1.5s;
