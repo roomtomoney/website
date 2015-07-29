@@ -7,8 +7,6 @@
 
 $("section#interested .form .submittedMessage").css("display", "none");
 
-console.log("gets here");
-
 function formSubmitted(){
 	$("section#interested .form .questions").css("display", "none");
 	$("section#interested .form").addClass("submitted"); 
@@ -67,27 +65,27 @@ Jumbo.prototype.init = function(argObj) {
 
 Jumbo.prototype.next = function() {
 
-	console.log(this.currentSlide);
+	// console.log(this.currentSlide);
 	if (this.currentSlide == this.numSlides) {
 		this.currentSlide = 1;
-		this.topContainer.style.transform = "translateX(0)";	
-		this.topContainer.style.webkitTransform = "translateX(0)";
-		this.topContainer.style.mozTransform = "translateX(0)";
+		this.topContainer.style.transform = "translate3d(0,0,0)";	
+		this.topContainer.style.webkitTransform = "translate3d(0,0,0)";
+		this.topContainer.style.mozTransform = "translate3d(0,0,0)";
 	}
 
 	else {
 		var translateXPercent = 1/this.numSlides * 100;
-		this.topContainer.style.transform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
-		this.topContainer.style.webkitTransform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
-		this.topContainer.style.mozTransform = "translateX(-" + this.currentSlide*translateXPercent + "%)";
+		this.topContainer.style.transform = "translate3d(-" + this.currentSlide*translateXPercent + "%,0,0)";
+		this.topContainer.style.webkitTransform = "translate3d(-" + this.currentSlide*translateXPercent + "%,0,0)";
+		this.topContainer.style.mozTransform = "translate3d(-" + this.currentSlide*translateXPercent + "%,0,0)";
 		this.currentSlide += 1;	
 	}
 
 	// fadeout bannerText and 
 	var bText = this.topContainer.querySelectorAll(".bannerText");
-	console.log(bText);
+	// console.log(bText);
 	for (var i = 0 ; i < bText.length ; i++ ) {
-		console.log(bText.item(i));
+		// console.log(bText.item(i));
 		bText.item(i).classList.add("hiddden");
 	}
 
@@ -106,7 +104,7 @@ Jumbo.prototype.next = function() {
 
 Jumbo.prototype.start = function(interval) {
 	var that = this;
-	console.log(that);
+	// console.log(that);
 	this.topContainer.querySelector(".bannerText").classList.remove("hiddden");
 	this.setIntervalHandle = setInterval(this.next.bind(this), this.interval);
 
@@ -121,16 +119,16 @@ Jumbo.prototype.start = function(interval) {
 Jumbo.prototype.goTo = function(slide) {
 	// figure out how each much to travel for each slide
 	var translateXPercent = 1/this.numSlides * 100;
-	this.topContainer.style.transform = "translateX(-" + (slide-1)*translateXPercent + "%)";
-	this.topContainer.style.webkitTransform = "translateX(-" + (slide-1)*translateXPercent + "%)";
-	this.topContainer.style.mozTransform = "translateX(-" + (slide-1)*translateXPercent + "%)";
+	this.topContainer.style.transform = "translate3d(-" + (slide-1)*translateXPercent + "%,0,0)";
+	this.topContainer.style.webkitTransform = "translate3d(-" + (slide-1)*translateXPercent + "%,0,0)";
+	this.topContainer.style.mozTransform = "translate3d(-" + (slide-1)*translateXPercent + "%,0,0)";
 	this.currentSlide = slide;		
 
 	// fadeout bannerText and 
 	var bText = this.topContainer.querySelectorAll(".bannerText");
-	console.log(bText);
+	// console.log(bText);
 	for (var i = 0 ; i < bText.length ; i++ ) {
-		console.log(bText.item(i));
+		// console.log(bText.item(i));
 		bText.item(i).classList.add("hiddden");
 	}
 
@@ -172,13 +170,13 @@ JumboControl.prototype.init = function(argObj){
 		this.buttons[i].attr({"stroke-width":2, "stroke":"#7bcab4", "fill":"white", "cursor":"pointer"});
 	}
 
-	console.log("outsideforeach", this);
+	// console.log("outsideforeach", this);
 
 	// attach event listeners on the button click
 	this.buttons.forEach(function(item, index){
 		var that = this;
 		item.click(function(){
-			console.log("WHAT",this);
+			// console.log("WHAT",this);
 			that.controlFor.goTo(index+1);
 		});
 	}, this);

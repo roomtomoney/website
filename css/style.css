@@ -81,22 +81,25 @@ img {
 	left:0;
 	background: rgba(123,202,180,0.95);
 	z-index:9999;
+	bottom:0;
 }
 
 .menu ul {
 	padding:0;
 	margin-top:100px;
+	height:100%;
+	position:relative;
 }
 
 .menu ul li {
 	list-style:none;
 	color:white;
-	height:125px;
+	height:20%;
 	font-size:2em;
 	letter-spacing:0.1em;
 }
 
-.menu ul a:hover, .menu ul a:active {
+.menu ul li a:hover, .menu ul a:active {
 	text-decoration: none;
 }*/
 
@@ -116,9 +119,11 @@ img {
 	margin-bottom:0;
 	width:200%;
 	height:auto;
-	-moz-transition: -moz-transform 1.75s ease-in-out;
-	-webkit-transition: -webkit-transform 1.75s ease-in-out;
-	transition:transform 1.75s ease-in-out;
+	-moz-transition: -moz-transform 1.5s ease-in-out;
+	-webkit-transition: -webkit-transform 1.5s ease-in-out;
+	transition:transform 1.5s ease-in-out;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .jumbotron .banner {
@@ -195,6 +200,7 @@ nav {
 	margin-top:10px;
 	padding-top:10px;
 	padding-bottom:10px;
+	position:relative;
 }
 
 nav #logo, nav #logoType {
@@ -587,10 +593,14 @@ section#testimonials .hostJumbo .banner .bannerText p.hostName {
 	text-align:center;
 }
 
+section#testimonials .hostJumbo .banner .bannerText span.hostName {
+	color:#7bcab4;
+}
+
 section#testimonials .hostJumbo .banner .bannerText p {
 	margin-top:30px;
 	font-size:0.9em;
-	line-height:1.3em;
+	line-height:1.5em;
 	text-align:left;
 }
 
@@ -792,7 +802,7 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 /*		margin-top:-90px;*/
 	}
 
-	.row .entry br {
+	br {
 		display:inline;
 	}
 
