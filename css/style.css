@@ -315,7 +315,8 @@ section#interested .form form .ss-form-entry select  {
 
 section#interested .form form .ss-form-entry input[type="text"]:focus,
 section#interested .form form .ss-form-entry input[type="email"]:focus,
-section#interested .form form .ss-form-entry select:focus{
+section#interested .form form .ss-form-entry select:focus,
+section#interested .form form .ss-form-entry textarea:focus {
 	outline-color:#7bcab4;
 	outline-width:2px;
 }
