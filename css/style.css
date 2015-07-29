@@ -551,11 +551,12 @@ footer {
 	background-color: #323232;
 	height:auto;
 	padding-top:40px;
-	padding-bottom:100px;
+	padding-bottom:60px;
 }
 
 footer img {
 	max-width:150px;
+	margin-bottom:40px;
 }
 
 footer p {
