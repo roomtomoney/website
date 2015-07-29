@@ -549,8 +549,23 @@ span{
 footer {
 	margin-top: 50px;
 	background-color: #323232;
-	height:300px;
+	height:auto;
+	padding-top:40px;
+	padding-bottom:100px;
 }
+
+footer img {
+	max-width:150px;
+}
+
+footer p {
+	padding-left:7px;
+	font-weight:700;
+	font-size:0.8em;
+	letter-spacing:0.02em;
+}
+
+
 
 section#services .entry ul li::after {
 	content:"";
@@ -581,6 +596,7 @@ section#testimonials .hostJumbo .banner .bannerText.hiddden {
 }
 
 section#testimonials .hostJumbo .banner .bannerText h4 {
+	margin-top:20px;
 	font-size:1.2em;
 }
 
