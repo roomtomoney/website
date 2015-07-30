@@ -222,6 +222,56 @@ nav #logoType #svgLogoType {
 	height:auto;	
 }
 
+.snsLinks {
+	height:auto;
+	overflow:hidden;
+	transition:height 0.5s;
+	text-align:center;
+}
+
+
+.snsLinks img, .snsLinks p{
+	display:inline-block;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.snsLinks p {
+	margin-left:10px;
+	opacity:0.5;
+	font-size:0.8em;
+	letter-spacing:0.01em;
+	font-weight:700;
+}
+
+.snsLink {
+	cursor:pointer;
+}
+
+.snsLinks a{
+	color:inherit;
+}
+
+.snsLink:hover p {
+	opacity:1;
+}
+
+.snsLinks a:nth-of-type(2) div:hover p {
+	color:white;
+}
+
+.snsLink:first-child:hover {
+	background-color: #fde500;
+}
+
+.snsLinks a:nth-of-type(2) div:hover {
+	background-color: #36609f;
+}
+
+.snsIcon {
+	max-width:40px;
+}
+
 section .intro h3 {/*
 	text-align:center;*/
 }
@@ -641,6 +691,11 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+	.snsLinks img, .snsLinks p{
+		padding-top:40px;
+		padding-bottom:40px;
+	}
 
 	.menu {
 		display:block;
