@@ -231,13 +231,13 @@ nav #logoType #svgLogoType {
 
 
 .snsLinks img, .snsLinks p{
-	display:inline-block;
-	padding-top:20px;
-	padding-bottom:20px;
+	display:none;
+	padding-top:40px;
+	padding-bottom:40px;
 }
 
 .snsLinks img {
-	padding-bottom:5px;
+	display:inline-block;
 }
 
 .snsLinks p {
@@ -697,6 +697,7 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 @media (min-width: 768px) { 
 
 	.snsLinks img, .snsLinks p{
+		display:inline-block;
 		padding-top:40px;
 		padding-bottom:40px;
 	}
