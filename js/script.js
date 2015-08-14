@@ -167,7 +167,7 @@ JumboControl.prototype.init = function(argObj){
 
 	for (var i = 0; i < argObj.numSlides; i++ ){
 		this.buttons.push(this.raphaelPaper.circle(i*30 + 15, 25, 10));
-		this.buttons[i].attr({"stroke-width":2, "stroke":"#7bcab4", "fill":"white", "cursor":"pointer"});
+		this.buttons[i].attr({"stroke-width":2, "stroke":"#8ED6CE", "fill":"white", "cursor":"pointer"});
 	}
 
 	// console.log("outsideforeach", this);
@@ -184,7 +184,7 @@ JumboControl.prototype.init = function(argObj){
 	// attach event listener on the button hover
 	this.buttons.forEach(function(item, index){
 		item.mouseover(function(){
-				this.attr({"fill":"#7bcab4"});	
+				this.attr({"fill":"#8ED6CE"});	
 		});
 	});
 
@@ -206,7 +206,7 @@ JumboControl.prototype.highlightButton = function(slide){
 	this.buttons.forEach(function(item){
 		item.animate({"fill":"white"}, 500, "ease");
 	});
-	this.buttons[slide-1].animate({"fill":"#7bcab4"}, 500, "ease");
+	this.buttons[slide-1].animate({"fill":"#8ED6CE"}, 500, "ease");
 };
 
 /* Smooth Scrolling */

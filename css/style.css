@@ -28,12 +28,12 @@ img {
 }
 
 .myButton {
-  background: #7bcab4;
-  background-image: -webkit-linear-gradient(top, #7bcab4, #74b8a5);
-  background-image: -moz-linear-gradient(top, #7bcab4, #74b8a5);
-  background-image: -ms-linear-gradient(top, #7bcab4, #74b8a5);
-  background-image: -o-linear-gradient(top, #7bcab4, #74b8a5);
-  background-image: linear-gradient(to bottom, #7bcab4, #74b8a5);
+  background: #8ED6CE;
+  background-image: -webkit-linear-gradient(top, #8ED6CE, #89CCC2);
+  background-image: -moz-linear-gradient(top, #8ED6CE, #89CCC2);
+  background-image: -ms-linear-gradient(top, #8ED6CE, #89CCC2);
+  background-image: -o-linear-gradient(top, #8ED6CE, #89CCC2);
+  background-image: linear-gradient(to bottom, #8ED6CE, #89CCC2);
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
@@ -46,12 +46,12 @@ img {
 }
 
 .myButton:hover {
-  background: #89d6c0;
-  background-image: -webkit-linear-gradient(top, #89d6c0, #7bcab4);
-  background-image: -moz-linear-gradient(top, #89d6c0, #7bcab4);
-  background-image: -ms-linear-gradient(top, #89d6c0, #7bcab4);
-  background-image: -o-linear-gradient(top, #89d6c0, #7bcab4);
-  background-image: linear-gradient(to bottom, #89d6c0, #7bcab4);
+  background: #8ED6CE;
+  background-image: -webkit-linear-gradient(top, #98E2D7, #8ED6CE);
+  background-image: -moz-linear-gradient(top, #98E2D7, #8ED6CE);
+  background-image: -ms-linear-gradient(top, #98E2D7, #8ED6CE);
+  background-image: -o-linear-gradient(top, #98E2D7, #8ED6CE);
+  background-image: linear-gradient(to bottom, #98E2D7, #8ED6CE);
   text-decoration: none;
 }
 
@@ -111,8 +111,8 @@ img {
 }
 
 .jumbotron, .hostJumbo {
-/*	border-top:5px solid #7bcab4;
-	border-bottom:5px solid #7bcab4;*/
+/*	border-top:5px solid #8ED6CE;
+	border-bottom:5px solid #8ED6CE;*/
 	padding-top: 0;
 	padding-bottom: 0;
 	overflow:hidden;
@@ -284,7 +284,7 @@ section#about .intro h3 {
 /*	text-align:center;*/
 	font-size:1.3em;
 	font-weight:700;
-	color:#7bcab4;
+	color:#8ED6CE;
 	border:none;
 	margin-top:40px;
 }
@@ -300,7 +300,7 @@ section#services .intro h3 {
 
 
 	.servicesDiv {
-		background-color: rgba(123,202,180,0.8);
+		background-color: rgba(142,214,206,0.8);
 	}
 
 	.servicesDiv .entry.icon img{
@@ -322,7 +322,7 @@ section#testimonials .intro h3 {
 	/*text-align:center;*/
 	font-size:1.3em;
 	font-weight:700;
-	color:#7bcab4;
+	color:#8ED6CE;
 	border:none;
 	margin-top:40px;
 }
@@ -331,7 +331,7 @@ section#interested .intro h3 {
 	/*text-align:center;*/
 	font-size:1.3em;
 	font-weight:700;
-	color:#7bcab4;
+	color:#8ED6CE;
 	border:none;
 	margin-top:40px;
 }
@@ -344,7 +344,7 @@ section#interested .form {
 }
 
 section#interested .form.submitted {
-	background-color:#7bcab4;
+	background-color:#8ED6CE;
 }
 
 section#interested .form form .ss-form-entry {
@@ -361,7 +361,7 @@ section#interested .form form .ss-form-entry input[type="text"],
 section#interested .form form .ss-form-entry input[type="email"],
 section#interested .form form .ss-form-entry select  {
 	border-radius:5px;
-	border:1px solid #7bcab4;
+	border:1px solid #8ED6CE;
 	padding-left:5px;
 	padding-bottom:5px;
 	font-size:0.9em;
@@ -371,14 +371,14 @@ section#interested .form form .ss-form-entry input[type="text"]:focus,
 section#interested .form form .ss-form-entry input[type="email"]:focus,
 section#interested .form form .ss-form-entry select:focus,
 section#interested .form form .ss-form-entry textarea:focus {
-	outline-color:#7bcab4;
+	outline-color:#8ED6CE;
 	outline-width:2px;
 }
 
 section#interested .form form .ss-form-entry textarea {
 	width:100%;
 	border-radius:5px;
-	border:1px solid #7bcab4;
+	border:1px solid #8ED6CE;
 	padding-left:5px;
 	height:100px;
 }
@@ -398,7 +398,7 @@ section#interested .form .submittedMessage img{
 }
 
 span.ss-required-asterisk {
-	color:#7bcab4;
+	color:#8ED6CE;
 }
 
 section {
@@ -421,12 +421,12 @@ section.bg-white {
 }
 
 section.bg-white h3 {
-	color:#7bcab4;
+	color:#8ED6CE;
 	border-bottom:1px solid #afafaf;
 }
 
 section.bg-mint {
-	background-color: rgba(123,202,180,1);
+	background-color: #8ED6CE;
 }
 
 section.bg-mint h3 {
@@ -444,7 +444,7 @@ section .intro p {
 }
 
 section.bg-white .entry.intro {
-	background-color: rgba(150,255,120,0.1);
+	background-color: rgba(142,214,206,0.1);
 }
 
 section.bg-mint .entry.intro {
@@ -566,7 +566,7 @@ section .icon h4 {
 }
 
 .splash {
-	background-color: #7bcab4;
+	background-color: #8ED6CE;
 	width:100%;
 	height:100%;
 	overflow:hidden;
@@ -660,13 +660,13 @@ section#testimonials .hostJumbo .banner .bannerText p.hostName {
 	margin-top:20px;
 	margin-bottom:20px;
 	font-size:0.9em;
-	color:#7bcab4;
+	color:#8ED6CE;
 	font-weight:700;
 	text-align:center;
 }
 
 section#testimonials .hostJumbo .banner .bannerText span.hostName {
-	color:#7bcab4;
+	color:#8ED6CE;
 }
 
 section#testimonials .hostJumbo .banner .bannerText p {
@@ -729,7 +729,7 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 	}
 
 .menu ul li:hover {
-	color:#7bcab4;
+	color:#8ED6CE;
 }
 	nav #logoType #svgLogoType {
 		display:none;
