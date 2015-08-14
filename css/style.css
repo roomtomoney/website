@@ -216,7 +216,7 @@ nav #logo #svgLogo {
 
 nav #logoType #svgLogoType {
 	margin-left:2.5px;
-	margin-top:-40px;
+	margin-top:0;
 	display:inline-block;
 	max-width:140px;
 	height:auto;	
@@ -888,7 +888,7 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 		display:block;
 		max-width:150px;
 		height:auto;
-		margin-top:-4px;
+		margin-top:15px;
 		margin-left:-40px;
 		/*margin-left:-150px;*/
 	}
@@ -919,7 +919,7 @@ section#testimonials .hostJumbo .banner .bannerText img.hostImg {
 
 	nav #logoType #svgLogoType {
 		margin-top:-7px;
-		margin-left:-40px;
+		margin-top:15px;
 	}
 
 	.jumbotron img {
