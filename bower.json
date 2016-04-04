@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
-    "raphael": "~2.1.4"
+    "raphael": "~2.1.4",
+    "lightbox2": "~2.8.2"
   }
 }

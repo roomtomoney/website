@@ -1,37 +1,624 @@
+<!--[if lt IE 9]>      
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>    
+<![endif]-->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>RTM Under Construction...</title>
-	<style>
-		body {
-			text-align: center;
-		}
-		.closing h1, .article, .footer {
-			display: block;
-			margin-bottom: 50px;
-		}
-		.article {
-			margin: 0 auto;
-			margin-bottom: 50px;
-			width: 500px;
-		}
-		.footer {
-			font-size: 0.9em;
-		}
-	</style>
-</head>
-<body class="closing">
-	<h1>해산 및 채권 신고공고</h1>
-	<div class="article">
-		본 회사는 2016년 3월 15일 임시주주총회에서 해산 결의되어 당 회사에 대하여 채권이 있으신 분은 본 공고 게재 익일로부터 2개월 내에 그 채권액을 신고하여 주시기 바랍니다. 만약 위 기일까지 신고가 없으면 청산에서 제외됩니다.
+<html lang="en kr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome To RTM</title>
+
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=2bbQqb88LP">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=2bbQqb88LP">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png?v=2bbQqb88LP" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=2bbQqb88LP" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png?v=2bbQqb88LP" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=2bbQqb88LP" sizes="16x16">
+	<link rel="manifest" href="/manifest.json?v=2bbQqb88LP">
+	<!-- <link rel="shortcut icon" href="/favicon.ico?v=2bbQqb88LP"> -->
+	<link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
+	<meta name="msapplication-TileColor" content="#8ED6CE">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=2bbQqb88LP">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	
+
+	<a id="over" style="display: none" href="imgs/over.png" data-lightbox="image-1">Image #1</a>
+	<div class="container">
+		
+	    <nav>
+	    	<div class="row">
+	    		<div class="col-xs-12 col-md-2" id="logo">
+	    			<img src="imgs/icons/logo.svg" id="svgLogo">
+				</div>
+
+				<div class="col-xs-12 col-sm-2" id="logoType">
+					<img src="imgs/icons/logo_type.svg" id="svgLogoType" alt="">
+				</div>
+
+				<div class="col-xs-12 col-sm-8 menu">
+					<ul>
+						<a href="#about"><li>About</li></a>
+						<a href="#services"><li>Services</li></a>
+						<a href="#testimonials"><li>Testimonials</li></a>
+						<a href="#interested"><li>Interested?</li></a>
+						
+						
+					</ul>
+				</div>
+	    	</div>
+    	</nav>
+	</div> <!-- NAV CONTAINER -->
+
+	<div class="jumbotronTop">
+		<div class="jumbotron">
+			<div class="banner">
+				<div class="bannerText hiddden kr">
+					<p>
+						<span>룸투머니</span>는 대한민국 최초의 <span>Airbnb 전문<br class="sm"> 운영 서비스</span>를 제공하는 회사입니다.
+					</p>
+					<a href="#about"><input type="button" class="myButton" value="About"></a>
+				</div>
+				<img src="imgs/jumbo1.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="banner">
+				<div class="bannerText kr">
+					<p>
+						호스팅, <span>시작이 반</span>입니다. <br class="xs"> <span>나머지 반은 <br class="sm">룸투머니가 책임</span>집니다.
+					</p>
+					<a href="#services"><input type="button" class="myButton" value="Services"></a>
+				</div>
+				<img src="imgs/jumbo4.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="banner">
+				<div class="bannerText kr">
+					<p>
+						당신의 <span>빈 방의 가치, <br class="sm"> 룸투머니</span>와 함께 발견해보세요.
+					</p>
+					<a href="#testimonials"><input type="button" class="myButton" value="Testimonials"></a>
+				</div>
+				<img src="imgs/jumbo3.jpg" alt="" class="img-responsive">
+			</div>
+
+		</div>
 	</div>
-	<div class="footer">
-		2016년 3월 30일 <br/>
-		서울특별시 서초구 서초대로 397, 제14층 제1401호(서초동) <br/>
-		주식회사 <strong>룸투머니</strong> <br/>
-		청산인 <strong>정 유 석</strong> <br/>
-		홈페이지 <strong>www.roomtomoney.com</strong>
-	</div>
-</body>
+
+
+	<section class="bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 inspiration kr">
+<!-- 					<span>룸투머니</span>는 대한민국 최초의 <span>Airbnb 전문 운영 서비스</span>를 제공하는 회사입니다.  -->
+					<div class="jumboControl"></div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<hr>
+
+
+  	<section id="about" class="bg-white card">
+  		<div class="container">
+	  		<div class="row">
+		  		<header class="col-xs-12">
+		  			<h2>About</h2>
+		  		</header>
+
+				<div class="col-xs-12 entry intro">
+					<div class="row">
+						<div class=" col-xs-12 col-sm-4 col-sm-push-1 col-md-push-2 kr">
+							<h3>룸투머니란?</h3>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-6 kr">
+							<p>
+							룸투머니는 대한민국 최초 <span>Airbnb 전문 운영 서비스사</span>로 <span>아파트, 빌라, 다세대, 단독주택, 다가구 등의 빈 방</span>을 외국인 게스트 하우스로 운영하고자 하는 분들 또는 현재 Airbnb로 호스트로 활동하고 계시고 있으나 혼자 운영의 어려움을 겪으시는 분들께 맞춤 운영 서비스를 제공하고 호스트님의 재미와 수익을 높이기 위해 노력하고 있습니다. 
+							</p>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="clearfix"></div>
+
+		  		<hr>
+
+		  		<div class="entry col-xs-6 col-sm-3 icon">
+			  		<img src="imgs/icons/icon_convenient.svg" alt="">
+			  		<h4>Convenience</h4>
+			  		<p class="kr">편리성</p>
+		  		</div>
+		  		<div class="entry col-xs-6 col-sm-3 icon">
+			  		<img src="imgs/icons/icon_profit.svg" alt="">
+			  		<h4>Profitability</h4>
+			  		<p class="kr">수익성</p>
+		  		</div>
+		  		<div class="entry col-xs-6 col-sm-3 icon">
+			  		<img src="imgs/icons/icon_funex.svg" alt="">
+			  		<h4>Fun Experience</h4>
+			  		<p class="kr">재미있는 경험</p>
+		  		</div>
+		  		<div class="entry col-xs-6 col-sm-3 icon">
+			  		<img src="imgs/icons/icon_community.svg" alt="">
+			  		<h4>Host Community</h4>
+			  		<p class="kr">호스트 공동체</p>
+		  		</div>
+
+				<div class="clearfix"></div>
+
+		  		<hr>
+
+		  		<div class="entry col-xs-12 helper kr">
+		  			<div class="row">
+		  			<p class="col-xs-12 col-sm-5 col-sm-offset-1">
+		  			룸투머니는 2014년 5월, 아일랜드 더블린에서 방 10개로 시작하여, 2014년 10월 대한민국 서울에 본사를 설립하고 아시아의 Airbnb 호스트들이 어디서나 사용할 수 있는 서비스로 만들기 위해 노력하고 있습니다. 
+		  			</p>
+					<p class="col-xs-12 col-sm-5">
+		  			룸투머니는 호스트님의 편리성(Convenience), 수익성(Profitability), 재미있는 경험(Fun Experience)을 가장 중요한 가치로 생각하고 있습니다. 룸투머니의 전문 운영 서비스를 통해 번거롭고 어려운 일들은 맡기시고, 호스팅의 즐거움에 집중해보세요.
+
+		  			</p>
+		  			</div>
+		  		</div>
+
+				<div class="clearfix"></div>		  		
+
+				<hr>
+
+		  		<div class="snsLinks">	
+		  			<a href="http://goto.kakao.com/@룸투머니" target="_blank">
+						<div class="col-xs-6 snsLink">
+							<img src="imgs/icons/sns_yellowid.svg" class="snsIcon" alt=""><br class="xs">
+							<p>카카오톡에서 친구맺기! <br class="xs">@룸투머니</p>
+						</div>
+					</a>
+					<a href="https://www.facebook.com/roomtomoney" target="_blank">
+						<div class="col-xs-6 snsLink">
+							<img src="imgs/icons/sns_facebook.svg" class="snsIcon" alt=""><br class="xs">
+							<p>룸투머니 FACEBOOK PAGE도 <br class="xs">방문해주세요!</p>
+						</div>
+					</a>
+				</div>	
+
+			
+		  	</div>
+	
+
+	  	</div>
+  	</section>
+
+	<hr>
+
+  	<section id="services" class="bg-mint card">
+  		<div class="container">
+	  		<div class="row">
+		  		<header class="col-xs-12">
+		  			<h2>Services</h2>
+		  		</header>
+
+				<div class="col-xs-12 entry intro">
+					<div class="row">
+						<div class=" col-xs-12 col-sm-4 col-sm-push-1 col-md-push-2 kr">
+							<h3>룸투머니 <br class="sm">서비스</h3>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-6 kr">
+							<p>
+							룸투머니는 호스트님의 만족스러운 운영 효과를 위해 아래와 같은 서비스를 운영하고 있습니다. 
+							</p>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="clearfix"></div>
+
+		  		<hr>
+				<div class="servicesDiv">	
+			  		<div class="entry col-xs-12 col-sm-6 col-md-4 col-md-offset-1 icon">
+				  		<img src="imgs/icons/icon_new_service.svg" alt="">
+			  		</div>
+			  		<div class="entry col-xs-12 col-sm-6 col-md-5 col-md-offset-1 kr">
+						<div class="vertAlign">
+					  		<h4>신규 계정 오픈 서비스</h4>
+						  	<p> 플랫폼 신규계정오픈에 필요한 제반 작업 및 게스트의 편리한 숙소 이용을 위한 각종 자료를 제작해드립니다. 집에 대한 정보와 사진은 게스트가 호스트님의 집을 예약하는 데에 중요한 요소입니다. 신규 계정 오픈 서비스에는 다음과 같은 내용이 포함 되어 있습니다.
+						  	</p>
+						  	<ul>
+						  	<li>플랫폼 계정 등록</li>
+            				<li>집에 대한 소개 글 영어, 중국어, 한국어로 작성</li>
+				            <li>사진 촬영 및 사진 등록</li>
+				            <li>웰컴이메일 제작</li>
+				            <li>집사용 설명서 제작</li>
+				            </ul>
+						  	
+
+					  	</div>
+			  		</div>
+
+			  		<div class="clearfix"></div>
+
+					<hr>
+
+			  		<div class="entry col-xs-12 col-sm-6 col-md-4 col-md-offset-1 icon">
+				  		<img src="imgs/icons/icon_standard_service.svg" alt="">
+			  		</div>
+			  		<div class="entry col-xs-12 col-sm-6 col-md-5 col-md-offset-1 kr">
+						<div class="vertAlign">
+					  		<h4>스탠다드 서비스</h4>
+						  	<p> 스탠다드 서비스는 대표적인 글로벌 예약 플랫폼인 Airbnb를 이용해 호스팅 하시는 분들을 위한 서비스입니다. 신규 Airbnb 호스트 분들과 전문적인 Airbnb 운영을 원하시는 호스트분들을 위한 서비스로서 다음과 같은 서비스 내용이 포함되어 있습니다. 
+						  	</p>
+
+						  	<ul>
+							  	<li>Airbnb 계정 등록 및 리스팅 내용 작성</li>
+	            				<li>Airbnb 예약 관리</li>
+					            <li>Airbnb 운영 컨설팅</li>
+					            <li>외국어 예약 문의 24시간 365일 응대 서비스<br class="xs"> (영어, 중국어, 한국어)</li>
+					            
+				            </ul>
+
+					  	</div>
+			  		</div>
+
+			  		<div class="clearfix"></div>
+
+					<hr>
+
+					<div class="entry col-xs-12 col-sm-6 col-md-4 col-md-offset-1 icon">
+				  		<img src="imgs/icons/icon_premium_service.svg" alt="">
+			  		</div>
+			  		<div class="entry col-xs-12 col-sm-6 col-md-5 col-md-offset-1 kr">
+						<div class="vertAlign">
+					  		<h4>프리미엄 서비스 </h4>
+						  	<p> 프리미엄 서비스를 이용하시면 Airbnb 외에 추가적인 글로벌 예약 플랫폼들에 호스트님 집을 홍보하실 수 있습니다. 중국, 아시아, 유럽에 특화된 글로벌 예약 플랫폼을 통해 더 많은 게스트에게 예약 유도를 할 수 있습니다.  
+						  	</p>
+						  	<ul>
+							  	<li>추가 예약 플랫폼 계정 등록 및 리스팅 내용 작성</li>
+	            				<li>추가 플랫폼 예약관리</li>
+					            <li>추가 플랫폼 운영 컨설팅</li>
+					            <li>외국어 예약 문의 24시간 365일 응대 서비스 <br class="xs">(영어, 중국어, 한국어)</li>
+				            </ul>
+					  	</div>
+			  		</div>
+
+					<div class="clearfix"></div>
+
+<!-- 					<hr>
+
+			  		<div class="entry col-xs-12 col-sm-6 col-md-4 col-md-offset-1 icon">
+				  		<img src="imgs/icons/icon_clean.svg" alt="">
+			  		</div>
+			  		<div class="entry col-xs-12 col-sm-6 col-md-5 col-md-offset-1 kr">
+						<div class="vertAlign">
+					  		<h4>청소 서비스 </h4>
+						  	<p>전문적인 청소를 원하시는 호스트님께 룸투머니 협력 청소업체를 연결해드립니다. 
+						  	</p>
+					  	</div>
+			  		</div>	
+			  		<div class="clearfix"></div> -->
+		  		</div>
+  		
+			</div>
+		</div>
+  	</section>
+
+ 	<section id="testimonials" class="bg-white card">
+  		<div class="container">
+	  		<div class="row">
+		  		<header class="col-xs-12">
+		  			<h2>Testimonials</h2>
+		  		</header>
+
+				<div class="col-xs-12 entry intro">
+					<div class="row">
+						<div class=" col-xs-12 col-sm-4 col-sm-push-1 col-md-push-2 kr">
+							<h3>호스트 <br class="sm">체험담</h3>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-6 kr">
+							<p>
+							현재 룸투머니 서비스를 직접 사용하시면서 새로운 즐거움을 경험하고 계신 <br>호스트님들 스토리입니다.  
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="clearfix"></div>
+
+		  		<hr>
+
+		  		<div class="entry col-xs-12 hosts">
+		  			
+		  			<div class="jumbotronTop">
+		  				<div class="hostJumbo">
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr hiddden">
+		  							<img class="hostImg" src="imgs/host1.jpg" alt="">
+		  							<h4>MERS 영향에도 월 290만원 매출을 올리신 <br class="xs"><span class="hostName">윤명희 호스트님 (서울,잠실)</span></h4>
+		  							<div class="row">
+		  								<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  									<p>"오랫동안 장기 홈스테이를 운영해왔지만, Airbnb를 통한 단기 여행자들은 처음이고 방이 7개라 예약문의응대부터 청소까지 신경쓰이는 부분이 한두가지가 아니였어요. 그런데 룸투머니가 도움이 필요한 부분을 내 일처럼 신경써주니 저는 이전처럼 장기홈스테이에만 집중해도 더 많은 수익을 만들 수가 있었어요. 특히, MERS 때문에 걱정했던 6월에 290만원의 수익을 얻게 되니 룸투머니에 대한 고마움이 더 커졌습니다."
+											</p>
+		  								</div>
+		  							</div>		  							
+		  						</div>
+		  					</div>
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr">
+		  							<img class="hostImg" src="imgs/host2.jpg" alt="">		  					
+		  							<h4>룸투머니를 시작으로 '김여사의 게스트 하우스'를 꿈꾸시는 <br class="xs"><span class="hostName">김향금 호스트님 (서울,잠실)</span></h4>
+		  							<div class="row">
+					
+  										<div class="col-xs-12 col-md-8 col-md-offset-2">
+  											<p>"소일거리 겸 수입도 얻을 수 있는 일을 찾던 중에 호스팅을 알게 됐어요. 막상 거금을 들여 옥상 정원까지 개조했는데, Airbnb를 사용하려니 신경 쓸 일이 한두가지가 아니었어요. 계정을 등록하는 일부터 외국어 문의 답변까지...<br>
+  											하지만 룸투머니를 통해 쉽게 시작할 수 있었어요. 외국인을 우리 집에 재운다는 것도 무섭기보단 재밌는 경험이 되었고, 6개월 동안 벌써 40팀의 게스트들이 다녀갔어요. 이제 제 꿈은 2년 뒤에 숙소를 늘려서 '김여사의 게스트 하우스'를 여는 거에요. 호스팅을 이제 시작하시려는 분들께 룸투머니 서비스를 꼭 추천하고 싶어요."</p>
+
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="banner col-xs-12">
+		  						<div class="bannerText kr">
+		  							<img class="hostImg" src="imgs/host3.jpg" alt="">		
+		  							<h4>회사를 다니면서 부수입까지 얻고 계신 <br class="xs"><span class="hostName">김명희 호스트님 (서울,광화문)</span></h4>
+		  							
+		  							<div class="row">
+		  								<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  									<p>"대부분의 호스트분들이 그렇듯이 본업을 하면서 지친 몸으로 Airbnb 호스트 역할을 한다는 것이 여간 힘든일이 아니였어요. 회의나 강의중에 예약 문의가 오거나 숙소에 문제가 발생하면 바로 해결이 정말 어려웠습니다. 이젠 룸투머니가 호스팅을 도와주니 본업에만 집중해도 안정적인 부수입이 발생하니 만족스럽네요."
+											</p>
+		  								</div>
+		  							</div>		  			  							
+		  						</div>
+		  					</div>		  					
+		  					
+		  				</div>
+		  			</div>
+					
+		  		</div>
+
+				<div class="clearfix"></div>
+				<div class="hostJumboControlContainer">
+					<div class="hostJumboControl"></div>
+				</div>
+
+		  	</div>
+
+	  	</div>
+  	</section>
+
+  	<section id="interested" class="bg-white card">
+  		<div class="container">
+	  		<div class="row">
+		  		<header class="col-xs-12">
+		  			<h2>Interested?</h2>
+		  		</header>
+
+				<div class="col-xs-12 entry intro">
+					<div class="row">
+						<div class=" col-xs-12 col-sm-4 col-sm-push-1 col-md-push-2 kr">
+							<h3>상담요청</h3>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-6 kr">
+							<p>
+							룸투머니 서비스 사용에 관하여 상담을 요청하시고 싶으십니까? 다음 질문들에 대한 답변을 정성껏 적어주시면 룸투머니 매니저가 호스트님께 연락을 드리도록 하겠습니다.
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="clearfix"></div>
+
+		  		<hr>
+				<div class="form">
+			  		<div class="entry col-xs-12 col-lg-10 col-lg-offset-1 questions">
+						
+						
+						<script type="text/javascript">var submitted=false;</script>
+						<iframe name="hidden_iframe" id="hidden_iframe"
+						style="display:none;" onload="if(submitted)
+						{formSubmitted();}"></iframe>
+						<!-- <img src="imgs/icons/form_placeholder.png" alt=""> -->
+						<!--"https://docs.google.com/forms/d/1wMI7VA9iH5jei0rcpfR1xHMHr_3e_Fw-AGlWH5_6qJE/formResponse?embedded=true"-->
+						<form action="https://docs.google.com/forms/d/1wMI7VA9iH5jei0rcpfR1xHMHr_3e_Fw-AGlWH5_6qJE/formResponse?embedded=true" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="kr"><ol role="list" class="ss-question-list" style="padding-left: 0">
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_359248504">
+											<div class="ss-q-title">이름
+												<label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
+												<span class="ss-required-asterisk" aria-hidden="true">*
+												</span>
+											</div>
+											<div class="ss-q-help ss-secondary-text" dir="ltr">
+											</div>
+										</label><br>
+										<input type="text" name="entry.359248504" value="" class="ss-q-short required" id="entry_359248504" dir="auto" aria-label="이름  " aria-required="true" required title="">
+									</div>
+								</div>
+							</div> 
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item  ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_1408132078">
+											<div class="ss-q-title">이메일</div>
+											<div class="ss-q-help ss-secondary-text" dir="ltr">
+											</div>
+										</label><br>
+										<input type="email" name="entry.1408132078" value="" class="ss-q-short valid" id="entry_1408132078" dir="auto" aria-label="이메일  " title="">
+									</div>
+								</div>
+							</div>
+							<div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_1971478893"><div class="ss-q-title">핸드폰번호
+							<label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
+							<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+							<input type="text" name="entry.1971478893" value="" class="ss-q-short" id="entry_1971478893" dir="auto" aria-label="핸드폰번호  " aria-required="true" required="" title="" placeholder="예) 010-1234-5678">
+							</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_1942809083"><div class="ss-q-title">서비스 신청을 원하시는 방이 어느 지역의 위치해 있나요?
+							<label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
+							<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+							<!-- <div class="ss-q-help ss-secondary-text" dir="ltr">예) 강남구, 압구정동</div> --></label><br>
+							<input type="text" name="entry.1942809083" value="" class="ss-q-short" id="entry_1942809083" dir="auto" aria-label="어느 지역에 살고 계신가요? 예) 강남구, 압구정동 " aria-required="true" required="" title="" placeholder="예) 강남구, 압구정동">
+							</div></div></div> 
+
+							<div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="auto" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_999793348"><div class="ss-q-title">게스트에게 제공 가능한 집의 형태는? 
+							<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+							<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+							<div class="ss-q-help ss-secondary-text" dir="auto"></div></label><br>
+							<select name="entry.999793348" id="entry_999793348" aria-label="게스트에게 제공 가능한 집의 형태는?   " aria-required="true" required=""><option value=""></option>
+							<option value="아파트">아파트</option> <option value="오피스텔">오피스텔</option> <option value="다세대 주택">다세대 주택</option> <option value="일반주택">일반주택</option></select>
+							</div></div></div>
+
+
+
+							<div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_1882232415"><div class="ss-q-title">게스트에게 제공 가능한 공간 타입을 선택해주세요!
+							<label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
+							<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+							<select name="entry.1882232415" id="entry_1882232415" aria-label="호스트가 된다면 게스트에게 제공가능한 집 타입을 선택해주세요!  " aria-required="true" required=""><option value=""></option>
+							<option value="방">방</option> <option value="집">집</option></select>
+							</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_569368934"><div class="ss-q-title">게스트에게 제공 가능한 방은 몇개인가요?
+							<label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
+							<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+							<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+							<select name="entry.569368934" id="entry_569368934" aria-label="게스트에게 제공가능한 방은 몇개인가요?  " aria-required="true" required=""><option value=""></option>
+							<option value="1개">1개</option> <option value="2개">2개</option> <option value="3개 이상">3개 이상</option></select>
+							</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+							<div dir="ltr" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_1443282960"><div class="ss-q-title">호스팅! 여러가지 궁금한것도 걱정도 많으실거 같아요! 질문이 있으시면 모두 속시원하게 던져주세요!
+							</div>
+							<!-- <div class="ss-q-help ss-secondary-text" dir="ltr">최선을 다해 답해드리겠습니다!</div> --></label><br>
+							<textarea name="entry.1443282960" rows="8" cols="0" class="ss-q-long" id="entry_1443282960" dir="auto" aria-label="처음해보시는 에어비앤비. 여러가지 궁금한것도 걱정도 많으실거 같애요! 질문이 있으시면 모두 속시원하게 던져주세요!!  최선을 다해 답해드리겠습니다! "></textarea>
+							
+							</div></div></div>
+							<input type="hidden" name="draftResponse" value="[,,&quot;2578572244755308353&quot;]
+							">
+							<input type="hidden" name="pageHistory" value="0">
+
+
+							<input type="hidden" name="fbzx" value="2578572244755308353">
+
+							<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+							<input type="submit" name="submit" value="상담요청" id="ss-submit" class="jfk-button jfk-button-action myButton">
+							</td>
+							</tr></tbody></table></div></ol></form>
+
+					</div>
+
+					<div class="submittedMessage col-xs-12 kr">
+						<img src="imgs/icons/icon_formSubmitted.svg" alt=""><br class="xs sm">
+						요청해주셔서 감사합니다. <br class="xs sm">빠른시일내에 연락드리겠습니다!
+					</div>
+
+
+					<div class="clearfix"></div>
+
+
+
+<!-- 		  		<hr>
+
+		  		<div class="entry col-sm-6 col-md-4">
+		  			<h3>Great Reviews!</h3>
+		  			<p>Because we are good at what we do, you can be assured that your listings will get top reviews.</p>
+		  			<div class="icon">ICON</div>
+		  		</div>
+		  		<div class="entry col-sm-6 col-md-4">
+		  			<h3 class="color-mint">More Bookings!</h3>
+		  			<p>Great reviews on multiple hosting plaforms naturally lead to even more bookings.</p>
+		  			<div class="icon">ICON</div>
+		  		</div>	  		
+		  		<div class="entry  col-sm-6 col-md-4">
+		  			<h3 class="color-mint">Peace of Mind</h3>
+		  			<p>You have nothing to worry about.</p>
+		  			<div class="icon">ICON</div>
+		  		</div>	 -->
+
+				</div>
+
+			
+
+		  	</div>
+
+	  	</div>
+  	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="imgs/icons/logo_type.svg" alt="">
+					<p class="kr">
+						(주)룸투머니 사업자번호 264-81-43000 <br class="xs sm">
+						서울시 서초구 서초대로 397 <br class="xs sm">
+						Contact : rtmseoul@gmail.com  <br class="xs sm">
+						<p>Copyrightⓒ2015 By RoomToMoney. All rights reserved. </p>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	    <script src="bower_components/raphael/raphael-min.js"></script>
+	    <script src="js/script.js"></script>
+	    <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+	    <!-- google analytics 
+	    <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-65737814-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<!-- END google analytics -->
+	    <script>
+	    	$(document).ready(function() {
+	    		document.getElementById('over').click();
+	    	})
+	    	var jumboOne = new Jumbo(".jumbotron");
+	    	jumboOne.init({"name":"main", "inverval":7500, "control":".jumboControl"});
+	    	jumboOne.start();
+
+	    	var jumboTwo = new Jumbo(".hostJumbo");
+	    	jumboTwo.init({"name":"host", "interval":17500, "control":".hostJumboControl"});
+	    	jumboTwo.start();
+	    </script>
+	  
+  </body>
 </html>
+
